@@ -1,0 +1,28 @@
+<div ng-controller="HomeController as controller">
+  <div class="row">
+    <div class="col-md-6 centered">
+      <h2>Input numbers to convert to string equivalent</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <form ng-submit="controller.makePigLatin()">
+      <div class="col-md-6 centered">
+        <input type="number" id="input-field" class="form-control" placeholder="input number here" autofocus ng-model="controller.inputField">
+      </div>
+      <div class="col-md-6 centered">
+        <button type="submit" class="btn btn-primary">Convert</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 centered">
+      <h2>Output</h2>
+      <div id="output-field" class="well well-sm" ng-bind="controller.outputField">
+      </div>
+    </div>
+  </div>
+
+</div>
+
